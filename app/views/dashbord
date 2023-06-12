@@ -1,0 +1,111 @@
+import React, { useState, useEffect } from "React";
+import { View, Text, TouchableOpacity, Switch, ScrollView } from "react-native";
+import { white_color, primary_color, grey_color, default_font, light_grey_color } from "../../components/common";
+import { Icon } from "native-base";
+import Background from "../../components/background";
+import { styles } from "../../components/styles";
+import { S, standard_font_size } from "../../components/font";
+
+const DashboardForCourier = () => {
+    const [page, setPage] = useState(0)
+    const [ chg, setchg ] = useState(false)
+
+    const switch_color= {
+        'false' : light_grey_color,
+        'true' : grey_color
+    }
+
+    const Week_parcel = () => {
+        return(
+            <>
+                <TouchableOpacity style={{ width: '100%',padding: 15,marginVertical: 10, borderTopStartRadius: 10, borderTopEndRadius: 10, borderBottomEndRadius: 10, elevation: 10, backgroundColor: white_color}}>
+                    <Text style={{ color: light_grey_color,fontFamily: default_font}}>This Week Parcel</Text>
+                    <Text style={{fontFamily: default_font, color: light_grey_color, fontSize: standard_font_size}}> <Icon name={'calendar'} type={'Entypo'} style={{fontSize: standard_font_size, color: grey_color}} />4 Oct 2019</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={{ width: '100%',padding: 15,marginVertical: 10, borderTopStartRadius: 10, borderTopEndRadius: 10, borderBottomEndRadius: 10, elevation: 10, backgroundColor: white_color}}>
+                    <Text style={{ color: light_grey_color,fontFamily: default_font}}>This Week Parcel</Text>
+                    <Text style={{fontFamily: default_font, color: light_grey_color, fontSize: standard_font_size}}> <Icon name={'calendar'} type={'Entypo'} style={{fontSize: standard_font_size, color: grey_color}} />4 Oct 2019</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={{ width: '100%',padding: 15,marginVertical: 10, borderTopStartRadius: 10, borderTopEndRadius: 10, borderBottomEndRadius: 10, elevation: 10, backgroundColor: white_color}}>
+                    <Text style={{ color: light_grey_color,fontFamily: default_font}}>This Week Parcel</Text>
+                    <Text style={{fontFamily: default_font, color: light_grey_color, fontSize: standard_font_size}}> <Icon name={'calendar'} type={'Entypo'} style={{fontSize: standard_font_size, color: grey_color}} />4 Oct 2019</Text>
+                </TouchableOpacity>
+            </>
+        )
+    }
+
+    const Upcoming_parcel = () =>{
+        return(
+            <>
+                <TouchableOpacity style={{ width: '100%',padding: 20,marginVertical: 10, borderTopStartRadius: 10, borderTopEndRadius: 10, borderBottomEndRadius: 10, elevation: 10, backgroundColor: white_color}}>
+                    <Text style={{ color: light_grey_color,fontFamily: default_font}}>Upcoming Parcel</Text>
+                    <Text style={{fontFamily: default_font, color: light_grey_color, fontSize: standard_font_size}}> <Icon name={'calendar'} type={'Entypo'} style={{fontSize:  S, color: grey_color}} />4 Oct 2019</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={{ width: '100%',padding: 20,marginVertical: 10, borderTopStartRadius: 10, borderTopEndRadius: 10, borderBottomEndRadius: 10, elevation: 10, backgroundColor: white_color}}>
+                    <Text style={{ color: light_grey_color,fontFamily: default_font}}>Upcoming Parcel</Text>
+                    <Text style={{fontFamily: default_font, color: light_grey_color, fontSize: standard_font_size}}> <Icon name={'calendar'} type={'Entypo'} style={{fontSize:  S, color: grey_color}} />4 Oct 2019</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={{ width: '100%',padding: 20,marginVertical: 10, borderTopStartRadius: 10, borderTopEndRadius: 10, borderBottomEndRadius: 10, elevation: 10, backgroundColor: white_color}}>
+                    <Text style={{ color: light_grey_color,fontFamily: default_font}}>Upcoming Parcel</Text>
+                    <Text style={{fontFamily: default_font, color: light_grey_color, fontSize: standard_font_size}}> <Icon name={'calendar'} type={'Entypo'} style={{fontSize:  S, color: grey_color}} />4 Oct 2019</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={{ width: '100%',padding: 20,marginVertical: 10, borderTopStartRadius: 10, borderTopEndRadius: 10, borderBottomEndRadius: 10, elevation: 10, backgroundColor: white_color}}>
+                    <Text style={{ color: light_grey_color,fontFamily: default_font}}>Upcoming Parcel</Text>
+                    <Text style={{fontFamily: default_font, color: light_grey_color, fontSize: standard_font_size}}> <Icon name={'calendar'} type={'Entypo'} style={{fontSize:  S, color: grey_color}} />4 Oct 2019</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={{ width: '100%',padding: 20,marginVertical: 10, borderTopStartRadius: 10, borderTopEndRadius: 10, borderBottomEndRadius: 10, elevation: 10, backgroundColor: white_color}}>
+                    <Text style={{ color: light_grey_color,fontFamily: default_font}}>Upcoming Parcel</Text>
+                    <Text style={{fontFamily: default_font, color: light_grey_color, fontSize: standard_font_size}}> <Icon name={'calendar'} type={'Entypo'} style={{fontSize:  S, color: grey_color}} />4 Oct 2019</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={{ width: '100%',padding: 20,marginVertical: 10, borderTopStartRadius: 10, borderTopEndRadius: 10, borderBottomEndRadius: 10, elevation: 10, backgroundColor: white_color}}>
+                    <Text style={{ color: light_grey_color,fontFamily: default_font}}>Upcoming Parcel</Text>
+                    <Text style={{fontFamily: default_font, color: light_grey_color, fontSize: standard_font_size}}> <Icon name={'calendar'} type={'Entypo'} style={{fontSize:  S, color: grey_color}} />4 Oct 2019</Text>
+                </TouchableOpacity>
+            </>
+        )
+    }
+    return (
+        <Background >
+            <View style={{flex: 1, flexDirection: 'column', padding: 20}}>
+                {
+                    page == 0 ? 
+                    <View style={{flex: 0.25, width: '100%', justifyContent: 'center', alignItems: 'center', flexDirection: 'row'}}>
+                        <Text style={{flex: 1,fontFamily: default_font,fontSize: standard_font_size, color: primary_color, textAlign : 'right'}}>Send</Text>
+                        <View style={{flex: 1, alignItems: 'center'}}>
+                            <Switch 
+                                value={chg}
+                                trackColor={switch_color}
+                                thumbColor={white_color}
+                                onValueChange={()=>setchg(!chg)}
+                            />
+                        </View>
+                        <Text style={{flex: 1, fontFamily: default_font,fontSize: standard_font_size, color: primary_color}}>Receive</Text>
+
+                    </View>
+                    : 
+                    <></>
+                }
+                <View style={{ flexDirection: 'row'}}>
+                    <TouchableOpacity style={{flex: 1, padding: 10}} onPress={()=>setPage(0)}>
+                        <Text style={{color: white_color, textAlign: 'center',paddingVertical: 5, fontSize: standard_font_size, borderBottomWidth: page==0? 1: 0, borderBottomColor: primary_color , fontFamily: default_font, fontWeight: 'normal'}}>This Week Parcels</Text>    
+                    </TouchableOpacity>
+                    <TouchableOpacity style={{flex: 1, padding: 10}} onPress={()=>setPage(1)}>
+                        <Text style={{color: white_color, textAlign: 'center',paddingVertical: 5, fontSize: standard_font_size, borderBottomWidth: page==1? 1: 0, borderBottomColor: primary_color, fontFamily: default_font, fontWeight: 'normal'}}>Upcoming Parcels</Text>
+                    </TouchableOpacity>
+                </View>
+                <ScrollView>
+                    <View style={[styles.flexWrap,{flex: 3, padding: 10}]}>
+                        {
+                            page == 0 ?
+                            Week_parcel()
+                            :
+                            Upcoming_parcel()
+                        }
+                    </View>
+                </ScrollView> 
+            </View>
+        </Background>
+    )
+}
+
+export default DashboardForCourier;

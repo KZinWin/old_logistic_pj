@@ -1,0 +1,27 @@
+[0117/125013.604:ERROR:process_info.cc(359)] UncheckedAllocate
+[0117/143728.974:ERROR:process_info.cc(359)] UncheckedAllocate
+[0120/113144.473:ERROR:process_info.cc(359)] UncheckedAllocate
+[0120/123920.769:ERROR:process_info.cc(359)] UncheckedAllocate
+[0120/164651.952:ERROR:process_info.cc(359)] UncheckedAllocate
+[0120/164714.590:ERROR:filesystem_win.cc(148)] DeleteFile C:\Users\Trifinity\AppData\Local\Google\Chrome\User Data\Crashpad\reports\4fd9fc45-e62b-40b2-aefb-8739e6d4f32f.dmp: The process cannot access the file because it is being used by another process. (0x20)
+[1012/105035.533:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1013/140755.849:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1016/101752.957:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1016/193644.665:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1016/193644.665:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1016/193644.665:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1016/193644.665:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1016/193644.665:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1016/193644.665:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1016/193644.665:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1016/193644.665:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1016/193644.665:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1016/193644.665:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1016/193644.665:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1016/193644.665:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1016/193644.665:ERROR:exception_snapshot_win.cc(99)] thread ID 6328 not found in process
+[1026/002124.912:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1028/111502.311:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1207/151035.450:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1222/152147.044:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[0108/160109.539:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)

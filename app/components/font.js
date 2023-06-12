@@ -1,0 +1,11 @@
+export const xxxL = 40
+export const xxL = 33
+export const xL = 30
+export const L = 25
+export const M = 22
+export const S = 20
+export const xS = 17
+export const standard_font_size = 15
+export const label_font_size = 12
+export const xxS = 13
+export const xxxS = 10
